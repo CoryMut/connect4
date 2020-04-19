@@ -83,7 +83,7 @@ function placeInTable(y, x) {
 function endGame(msg, currPlayer) {
 	// TODO: pop up alert message
 	const p = document.querySelector('#playerTurn');
-	p.innerText = `Player ${currPlayer} won!`;
+	p.innerText = msg;
 	p.style.color = currPlayer === 1 ? 'blue' : 'red';
 	p.style.fontSize = 44 + 'px';
 	gameOver = true;
